@@ -1,6 +1,8 @@
 import os
 from django.db import models
 from django.urls import reverse
+import datetime
+from django.utils import timezone
 # Create your models here.
 
 def get_upload_path(instance, filename):
@@ -57,3 +59,18 @@ class Product(models.Model):
     
     def get_absolute_url(self):
         return reverse('shop:product_detail', args=[self.id, self.slug])
+    
+    def was_added_recently(self):
+        return self.created_at >= (timezone.now() - datetime.timedelta(days=7))
+    
+class Banner:
+    name = models.CharField(max_length=50)
+    photo = models.ImageField(upload_to=get_upload_path)
+
+    class Meta:
+        verbose_name = 'Баннер'
+        verbose_name_plural = 'Баннеры'
+
+
+    def __str__(self):
+        return self.name

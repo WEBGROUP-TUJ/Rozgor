@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Home{% endblock title %}
 
 {% block content %}
@@ -25,8 +26,8 @@
         <div class="container">
             <section class="header_slider">
                 <div class="owl-carousel slide3 owl-theme">
-                    <div class="item"><img src="img/1-887.jpg" alt=""></div>
-                    <div class="item"><img src="img/298_1200x755.jpg" alt=""></div>
+                    <div class="item"><img src="{% static 'img/1-887.jpg' %}" alt=""></div>
+                    <div class="item"><img src="{% static 'img/298_1200x755.jpg' %}" alt=""></div>
                     <div class="item"><img src="img/97368-derevo-nebo-voda-priroda-otrazhenie-1920x1080.jpg" alt=""></div>
                 </div>
             </section>
@@ -38,7 +39,7 @@
                 <div class="owl-carousel slide1 owl-theme owl-loaded">
                     {% for category in category_list %}
                     <div class="item">
-                        <a class="category_name" href="#">
+                        <a class="category_name" href="{{ category.get_absolute_url }}">
                             <img src="{% if category.cover %}{{category.cover.url}}{% endif %}" alt="">
                             <h4>{{category.name}}</h4>
                         </a>
@@ -54,49 +55,25 @@
             <div class="container">
                 <h3>Новые товары :</h3>
                 <div class="owl-carousel slide2 owl-theme">
+                    {% for product in product_list %}
+                    {% if product.was_added_recently %}
                     <div class="item">
-                        <img src="img/htstatic.imgsmail.jpg" alt="">
-                        <p>Iphone X 32gb
-                            Black, Speace Grey</p>
-                        <h4>10 500 000 сум</h4>
+                        <img src="{{product.image.url}}" alt="">
+                        <p>{{product.name}}</p>
+                        <h4>{{product.price}} сум</h4>
                         <div class="item_buttons">
-                            <a href="#">Посмотреть</a>
-                            <a href="#">В корзину</a>
+                            <a href="{{ product.get_absolute_url }}">Посмотреть</a>
+                            
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/htstatic.imgsmail.jpg" alt="">
-                        <p>Iphone X 32gb
-                            Black, Speace Grey</p>
-                        <h4>10 500 000 сум</h4>
-                        <div class="item_buttons">
-                            <a href="#">Посмотреть</a>
-                            <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/htstatic.imgsmail.jpg" alt="">
-                        <p>Iphone X 32gb
-                            Black, Speace Grey</p>
-                        <h4>10 500 000 сум</h4>
-                        <div class="item_buttons">
-                            <a href="#">Посмотреть</a>
-                            <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/htstatic.imgsmail.jpg" alt="">
-                        <p>Iphone X 32gb
-                            Black, Speace Grey</p>
-                        <h4>10 500 000 сум</h4>
-                        <div class="item_buttons">
-                            <a href="#">Посмотреть</a>
-                            <a href="#">В корзину</a>
-                        </div>
-                    </div>
+                     </div>
+                     {% endif %}
+                     {% endfor %}
+                     
                 </div>
             </div>
         </section> -->
+
+
         {% for category in category_list %}
         <section class="new">
             <div class="container">
@@ -119,26 +96,7 @@
         </section>
         {% endfor %}
 
-        <section class="info">
-            <div class="container">
-                <div class="info-div col-lg-4"><img src="img/car.png" alt="">
-                    <h5>Безопасная доставка</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin vel mattis dictum magnis.
-                        Ac at
-                        tristique aenean porta imperdiet eget condimentum.</p>
-                </div>
-                <div class="info-div col-lg-4"><img src="img/crm.png" alt="">
-                    <h5>Обслуживание Клиентов</h5>
-                    <p>Вы всегда можете рассчитывать на грамотную консультацию наших специалистов и помощь при выборе
-                        товаров.</p>
-                </div>
-                <div class="info-div col-lg-4"><img src="img/like.png" alt="">
-                    <h5>Качество и Надежность</h5>
-                    <p>В нашем интернет-магазине представлены только самые качественные товары от ведущих мировых
-                        производителей.</p>
-                </div>
-            </div>
-        </section>
+        
 
 
     </main>
