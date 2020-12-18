@@ -1,3 +1,5 @@
+from django.db.models import query
+from django.db.models import Q
 from django.shortcuts import render, get_object_or_404
 
 from .models import Category, Product
@@ -36,6 +38,9 @@ def product_list(request, category_slug=None):
     return render(request, 'shop/product/list.html', context)
 
 
+
+
+
 def product_detail(request, id, slug):
     product = get_object_or_404(Product, id=id, slug=slug, available=True)
     cart_product_form = CartAddProductForm()
@@ -54,3 +59,14 @@ class CategoryDetailView(DetailView):
     model = Category
     context_object_name = 'category'
     template_name = 'shop/product/category_detail.html'
+
+class SearchResultsListView(ListView):
+    model = Product
+    context_object_name = 'product_list'
+    template_name = 'shop/product/search_results.html'
+
+    def get_queryset(self):
+        query = self.request.GET.get('q')
+        return Product.objects.filter(
+            Q(name__icontains=query) | Q(description__icontains=query)
+        )
