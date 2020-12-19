@@ -11,9 +11,11 @@ services:
     depends_on:
       - db
     environment:
-      - ENVIRONMENT=development
+      - ENVIRONMENT=production
       - SECRET_KEY=8doo5ctq2hb8dafvfjwk&h5n8_qy7&uxtv&m8)nf4@rl6of2&g
-      - DEBUG=True
+      - DEBUG=0
+      - STRIPE_TEST_PUBLISHABLE_KEY=exizmat
+      - STRIPE_TEST_SECRET_KEY=exizmat
   db:
     image: postgres:11
     volumes:
