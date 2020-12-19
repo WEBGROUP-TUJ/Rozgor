@@ -68,8 +68,8 @@
                         <div id="mobile-nav" class="mobile-nav">
                             <div class="mobile-nav__title">Навигация</div>
                             <div class="mob_poisk">
-                                <form action="" method="GET">
-                                    <input class="mob_write" placeholder="Поиск по товарам" type="text">
+                                <form action="{% url 'shop:search_results' %}" method="GET">
+                                    <input class="mob_write" placeholder="Поиск по товарам" aria-label="Search" name="q">
                                     <button class="mob_send" type="submit"><img src="{% static 'img/searching-magnifying-glass.png' %}"
                                             alt=""></button>
                                 </form>
