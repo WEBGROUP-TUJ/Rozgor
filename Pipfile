@@ -12,6 +12,7 @@ portalocker = "*"
 django-debug-toolbar = "*"
 whitenoise = "*"
 dj-database-url = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
