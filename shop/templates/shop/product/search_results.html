@@ -6,8 +6,10 @@
     <main>
         <section class="poisk2">
             <h1>Результаты поиска</h1>
+            <div class="poisk_row">
             {% for product in product_list %}
-            <div class="item">
+
+            <div class="item col-lg-3">
                 <img src="{% if product.image %}{{product.image.url}}{% endif %}" alt="">
                 <p>{{product.name}}</p>
                 <h4>{{product.price}} сум</h4>
@@ -16,9 +18,11 @@
                     
                 </div>
             </div>
+
+            
             {% endfor %}
+        </div>
         </section>
     </main>
 
 {% endblock content %}
-    
