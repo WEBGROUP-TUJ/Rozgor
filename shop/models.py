@@ -53,6 +53,9 @@ class Product(models.Model):
         index_together = (('id', 'slug'),)
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
+        indexes = [
+            models.Index(fields=['id'], name='id_index'),
+        ]
     
     def __str__(self):
         return self.name

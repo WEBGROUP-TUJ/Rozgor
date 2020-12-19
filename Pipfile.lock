@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "741206bc272c921368660e5d67ed46f619b2c000ddf5875fe935fe40ed459400"
+            "sha256": "274cb7f5c5c6698c153cfbdcd8e1f18bc336878916f9fef8da01a5242243a29a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -40,6 +40,22 @@
             "index": "pypi",
             "version": "==1.10.0"
         },
+        "django-debug-toolbar": {
+            "hashes": [
+                "sha256:84e2607d900dbd571df0a2acf380b47c088efb787dce9805aefeb407341961d2",
+                "sha256:9e5a25d0c965f7e686f6a8ba23613ca9ca30184daa26487706d4829f5cfb697a"
+            ],
+            "index": "pypi",
+            "version": "==3.2"
+        },
+        "gunicorn": {
+            "hashes": [
+                "sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626",
+                "sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c"
+            ],
+            "index": "pypi",
+            "version": "==20.0.4"
+        },
         "pillow": {
             "hashes": [
                 "sha256:006de60d7580d81f4a1a7e9f0173dc90a932e3905cc4d47ea909bc946302311a",
@@ -73,6 +89,14 @@
             ],
             "index": "pypi",
             "version": "==8.0.1"
+        },
+        "portalocker": {
+            "hashes": [
+                "sha256:14487eed81aa914127edf0284e29c7ca8842c05bb33d96dc7e4bdb47282d26e4",
+                "sha256:5d7bc386d785dfc87e763a29d7d5864556c62653379e3ff484c71e49425d1898"
+            ],
+            "index": "pypi",
+            "version": "==2.0.0"
         },
         "pytz": {
             "hashes": [
