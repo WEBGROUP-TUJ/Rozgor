@@ -35,33 +35,7 @@
                     {% endwith %}
                     {% endfor %}
                     <!-- До Сюда -->
-                    <!-- {% for item in cart %}
-                    {% with product=item.product  %}
-                        <tr>
-                            <th scope="row">
-                                <a href="{{ product.get__absolute_url }}">
-                                    <img src="{% if product.image %} {{ product.image.url }} {% else %} {% static 'img/default.jpg' %} {% endif %}" alt="..." style="height: 130px; width: auto">
-                            </a>
-                            </th>
-                            <td>{{ product.name }}</td>
-                            <td>
-                            <form action="{% url "cart:cart_add" product.id %}" method="post">
-                                {% csrf_token %}
-                                <span style="display:inline-block">    
-                                    {{ item.update_quantity_form.quantity }}
-                                    {{ item.update_quantity_form.update }}
-                                    <input type="submit" value="Изменить" class="btn btn-outline-info"style="margin-top:10%;">
-                                </span>
-                            </form>
-                            </td>
-                            <td>
-                                <a href="{% url "cart:cart_remove" product.id %}">Удалить</a>
-                            </td>
-                            <td> {{ item.price }}</td>
-                            <td> {{ item.total_price }}</td>
-                        </tr>
-                    {% endwith %}
-                {% endfor %} -->
+                    
 
 
                 </div>
