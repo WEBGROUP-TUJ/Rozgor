@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import socket
-import dj_database_url
+
 
 hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
 INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
@@ -127,8 +127,8 @@ EMAIL_FILE_PATH - указывать путь где будут хранитьс
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' - выводит сообщение
 в консоль.
 '''
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = 'emails/email-messages/'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
@@ -168,6 +168,13 @@ STATICFILES_FINDERS = [ # new
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+#Email
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 CART_SESSION_ID = 'cart'
@@ -191,5 +198,8 @@ if ENVIRONMENT == 'production':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 #heroku
+import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+
