@@ -176,11 +176,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 #Email
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = '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'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
