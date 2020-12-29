@@ -7,17 +7,14 @@
         <section class="dropdown">
             <div class="container">
                 <ul class="menu cf">
+                    {% if nav_category %}
                     {% for category in category_list %}
                     <li>
                         <a href="{{ category.get_absolute_url }}">{{category.name}}</a>
-                        <ul class="submenu">
-                            <li><a href="">Submenu item</a></li>
-                            <li><a href="">Submenu item</a></li>
-                            <li><a href="">Submenu item</a></li>
-                            <li><a href="">Submenu item</a></li>
-                        </ul>
+                        
                     </li>
                     {% endfor %}
+                    {% endif %}
 
                 </ul>
             </div>

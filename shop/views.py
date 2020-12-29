@@ -55,6 +55,8 @@ class CategoryListView(ListView):
     context_object_name = 'category_list'
     template_name = 'shop/product/list.html'
 
+nav_category = category.category_list.order_by('id')[:5]
+
 class CategoryDetailView(DetailView):
     model = Category
     context_object_name = 'category'
