@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
+    path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('exizmat-admin/', admin.site.urls),
     path('cart', include('cart.urls')),
     path('orders/', include('orders.urls')),
