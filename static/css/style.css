@@ -81,6 +81,7 @@ h6 {
 
 body {
   position: relative;
+  background: url(../img/photo_2020-11-28_16-28-32.jpg);
 }
 
 .header {
@@ -582,7 +583,7 @@ body {
 
 main {
   position: relative;
-  background: url(../img/photo_2020-11-28_16-28-32.jpg);
+  
   background-attachment: fixed;
   padding: 10px 0 0 0;
   display: -webkit-box;
