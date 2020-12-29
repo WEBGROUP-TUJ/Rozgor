@@ -31,7 +31,7 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
 
     #Local apps
-    path('accounts/', include('users.urls')),
+    path('accounts/', include('accounts.urls')),
     path('cart', include('cart.urls')),
     path('orders/', include('orders.urls')),
     path('', include('shop.urls')),
