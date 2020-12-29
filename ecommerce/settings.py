@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-    'users.apps.UsersConfig',
+    'accounts',
 
     'debug_toolbar',
     'crispy_forms',
@@ -182,8 +182,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 
-LOGIN_REDIRECT_URL = 'shop:category_list'
-LOGOUT_REDIRECT_URL = 'shop:category_list'
+
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -214,3 +213,6 @@ db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
 
+AUTH_USER_MODEL = 'accounts.CustomUser'
+LOGIN_REDIRECT_URL = 'shop:category_list'
+LOGOUT_REDIRECT_URL = 'shop:category_list'

@@ -1,11 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin
-from django.forms import models
 
-from .forms import CustomUserChangeForm, CustomUserCreationForm
+from .forms import CustomUserCreationForm, CustomUserChangeForm
 
 CustomUser = get_user_model()
+
 
 class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
