@@ -134,7 +134,8 @@ EMAIL_FILE_PATH - указывать путь где будут хранитьс
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' - выводит сообщение
 в консоль.
 '''
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = 'emails/email-messages/'
 
 
 MESSAGE_TAGS = {
