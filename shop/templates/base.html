@@ -39,7 +39,7 @@
             <div class="header-overlay">
                 <div class="nav-container">
 
-                    <div class="logo"><img src="{% static 'img/Слой 1.png' %}" alt=""></div>
+                    <a href="{% url 'home' %}" class="logo"><img src="{% static 'img/Слой 1.png' %}" alt=""></a>
 
                     <!-- НАВИГАЦИЯ -->
                     <div class="nav-wrapper">
@@ -86,10 +86,6 @@
             </div>
         </div>
     </header>
-    {% block content %}
-    
-    {% endblock content %}
-    
     <section class="mob_poisk">
         <div class="container">
             <form action="{% url 'shop:search_results' %}" method="GET">
@@ -99,6 +95,10 @@
             </form>
         </div>
     </section>
+    {% block content %}
+    
+    {% endblock content %}
+    
     <section class="info">
         <div class="container">
             <div class="info-div col-lg-4"><img src="{% static 'img/car.png' %}" alt="">
