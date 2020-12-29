@@ -22,8 +22,15 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
+    #Django admin
     path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('exizmat-admin/', admin.site.urls),
+
+    #User management
+    path('accounts/', include('django.contrib.auth.urls')),
+
+    #Local apps
+    path('accounts/', include('users.urls')),
     path('cart', include('cart.urls')),
     path('orders/', include('orders.urls')),
     path('', include('shop.urls')),

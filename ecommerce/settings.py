@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig',
 
     'debug_toolbar',
     'crispy_forms',
@@ -178,7 +179,8 @@ STATICFILES_FINDERS = [ # new
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-#Email
+LOGIN_REDIRECT_URL = 'shop:category_list'
+LOGOUT_REDIRECT_URL = 'shop:category_list'
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
