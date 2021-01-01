@@ -39,7 +39,7 @@ ALLOWED_HOSTS = ['fathomless-citadel-81620.herokuapp.com', 'localhost', '127.0.0
 
 INSTALLED_APPS = [
     # в доках рекомендутся делать именно так, а не просто 'shop
-    'accounts.apps.AccountsConfig',
+    
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
@@ -51,10 +51,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
     
 
     'debug_toolbar',
     'crispy_forms',
+    'accounts.apps.AccountsConfig',
 
     
 ]
@@ -184,9 +188,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 
-
-
-
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 CART_SESSION_ID = 'cart'
@@ -217,4 +218,18 @@ DATABASES['default'].update(db_from_env)
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 LOGIN_REDIRECT_URL = 'shop:category_list'
-LOGOUT_REDIRECT_URL = 'shop:category_list'
+ACCOUNT_LOGOUT_REDIRECT = 'shop:category_list'
+
+#django-allauth config
+SITE_ID = 1
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend', # new
+)
+
+ACCOUNT_SESSION_REMEMBER = True # new
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False # new
+ACCOUNT_USERNAME_REQUIRED = False # new
+ACCOUNT_AUTHENTICATION_METHOD = 'email' # new
+ACCOUNT_EMAIL_REQUIRED = True # new
+ACCOUNT_UNIQUE_EMAIL = True # new
