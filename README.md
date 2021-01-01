@@ -26,6 +26,6 @@
 ## License
 
 
-Этот проект находится под лицензией MIT [LICENSE](LICENSE.md) и защищен торговой маркой Exizmat
+Этот проект находится под лицензией MIT [LICENSE](License.md) и защищен торговой маркой Exizmat
 
 
