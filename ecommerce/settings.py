@@ -40,10 +40,7 @@ ALLOWED_HOSTS = ['fathomless-citadel-81620.herokuapp.com', 'localhost', '127.0.0
 INSTALLED_APPS = [
     # в доках рекомендутся делать именно так, а не просто 'shop
     
-    'shop.apps.ShopConfig',
-    'cart.apps.CartConfig',
-    'orders.apps.OrdersConfig',
-    'grappelli',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,10 +52,14 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     
-
+    'grappelli',
     'debug_toolbar',
     'crispy_forms',
     'accounts.apps.AccountsConfig',
+    'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
+    'orders.apps.OrdersConfig',
+    
 
     
 ]
