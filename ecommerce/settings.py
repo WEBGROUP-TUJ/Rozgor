@@ -115,6 +115,9 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    "default": env.dj_db_url("DATABASE_URL")
+}
 
 
 
@@ -214,8 +217,7 @@ if ENVIRONMENT == 'production':
 
 #heroku
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+
 
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
