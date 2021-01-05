@@ -3,7 +3,8 @@ version: '3.9'
 services:
   web:
     build: .
-    command: gunicorn ecommerce.wsgi -b 0.0.0.0:8000 # new
+    #command: python /code/manage.py runserver 0.0.0.0:8000
+    command: gunicorn ecommerce.wsgi -b 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
@@ -11,13 +12,11 @@ services:
     depends_on:
       - db
     environment:
-      - DJANGO_SECRET_KEY=ldBHq0YGYxBzaMJnLVOiNG7hruE8WKzGG2zGpYxoTNmphB0mdBo
+      - ENVIRONMENT=production
+      - SECRET_KEY=)*_s#exg*#w+#-xt=vu8b010%%a&p@4edwyj0=(nqq90b9a8*n
+      - DEBUG=0
+      
   db:
     image: postgres:11
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
-
-volumes:
-  postgres_data:

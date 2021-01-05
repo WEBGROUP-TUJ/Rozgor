@@ -1,5 +1,6 @@
 import os
 from django.db import models
+from django.db.models import indexes
 from django.urls import reverse
 import datetime
 from django.utils import timezone
@@ -19,6 +20,9 @@ class Category(models.Model):
     cover = models.ImageField(upload_to=get_upload_path, null=True)
 
     class Meta:
+        indexes = [
+            models.Index(fields=['slug'], name='slug_index'),
+        ]
         ordering = ('name',)
         verbose_name = 'категория'
         verbose_name_plural = 'категории'
