@@ -11,6 +11,7 @@ class Order (models.Model):
     address = models.CharField("Адрес", max_length=150)
     postal_code = models.CharField("Почтовый индекс", max_length=30)
     city = models.CharField("Город", max_length=100)
+    tel_number = models.CharField("Номер телефона", max_length=13, null=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     paid = models.BooleanField("Оплачено", default=False)  # оплачен ли заказ
