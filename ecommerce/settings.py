@@ -38,9 +38,6 @@ ALLOWED_HOSTS = ['fathomless-citadel-81620.herokuapp.com', 'localhost', '127.0.0
 # Application definition
 
 INSTALLED_APPS = [
-    # в доках рекомендутся делать именно так, а не просто 'shop
-    
-    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,12 +46,16 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'allauth',
-    'allauth.account',
     
+    
+    #3-rd party
     'grappelli',
     'debug_toolbar',
     'crispy_forms',
+    'allauth',
+    'allauth.account',
+
+    #local
     'accounts.apps.AccountsConfig',
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
@@ -217,6 +218,7 @@ db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
 
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 LOGIN_REDIRECT_URL = 'shop:category_list'
 ACCOUNT_LOGOUT_REDIRECT = 'shop:category_list'
