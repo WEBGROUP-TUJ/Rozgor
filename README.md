@@ -26,6 +26,4 @@
 
 
 ## License
-Этот проект находится под лицензией MIT [LICENSE](https://github.com/UlugbekMuslitdinov/exizmat/blob/main/LICENSE) и защищен торговой маркой Exizmat
-
-
+*Этот проект находится под лицензией MIT [LICENSE](https://github.com/UlugbekMuslitdinov/exizmat/blob/main/LICENSE) и защищен торговой маркой Exizmat. Распространение и использование в коммерческих и/или личных целях без согласия автора ЗАПРЕЩЕНО*
