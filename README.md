@@ -31,4 +31,11 @@
 *Этот проект находится под лицензией MIT [LICENSE](https://github.com/UlugbekMuslitdinov/exizmat/blob/main/LICENSE) и защищен торговой маркой Exizmat. Распространение и использование в коммерческих и/или личных целях без согласия автора ЗАПРЕЩЕНО*
 
 ## Установка:
+### С помощью Docker:
 ```docker-compose up -d --build```
+
+### С помощью Pipenv:
+```pipenv install django psycopg2-binary```
+```pipenv shell```
+```python manage.py runserver```
+
