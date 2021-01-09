@@ -2,6 +2,8 @@
 
 Пример интернет магазина с использованием Django
 
+<img src="./doc/images/homepage.png" alt="Главная страница">
+
 ## О проекте
 
 Магазин выполненный на django версии 2.1, python 3.9. С bootstrap, CSS, HTML5, JavaScript для фронта и PostgreSQL.
