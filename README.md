@@ -1,6 +1,6 @@
 # Exizmat
 
-Пример интернет магазина с использованием Django
+Данный интрнет магащин сделать при помощи Django
 
 <img src="./doc/images/homepage.png" alt="Главная страница">
 
@@ -35,7 +35,7 @@
 ```docker-compose up -d --build```
 
 ### С помощью Pipenv:
-```pipenv install django psycopg2-binary```
-```pipenv shell```
-```python manage.py runserver```
+* ```pipenv install django psycopg2-binary```
+* ```pipenv shell```
+* ```python manage.py runserver```
 
