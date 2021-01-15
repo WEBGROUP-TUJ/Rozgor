@@ -148,7 +148,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' - выводи�
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-DEFAULT_FROM_EMAIL = 'ulugbekmuslitdinov@gmail.com'
+DEFAULT_FROM_EMAIL = 'admin@exizmat.uz'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = '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'
