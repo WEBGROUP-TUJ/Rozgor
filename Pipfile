@@ -15,6 +15,7 @@ dj-database-url = "*"
 psycopg2-binary = "*"
 django-grappelli = "*"
 django-allauth = "*"
+django-smtp-ssl = "*"
 
 [dev-packages]
 

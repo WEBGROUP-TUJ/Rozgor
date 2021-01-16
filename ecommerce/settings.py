@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = ['intense-beyond-64731.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['cryptic-scrubland-20744.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -145,17 +145,18 @@ EMAIL_FILE_PATH - указывать путь где будут хранитьс
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' - выводит сообщение
 в консоль.
 '''
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = 'emails/email-messages/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+DEFAULT_FROM_EMAIL = 'ulugbekmuslitdinov@gmail.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 
-MESSAGE_TAGS = {
-    messages.DEBUG: 'alert-info',
-    messages.INFO: 'alert-info',
-    messages.SUCCESS: 'alert-success',
-    messages.WARNING: 'alert-warning',
-    messages.ERROR: 'alert-danger',
-}
+
 
 
 # Internationalization
