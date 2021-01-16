@@ -11,8 +11,8 @@
                {% csrf_token %}
                {{form|crispy}}
                <button type="submit">Готово</button>
+               <a href="{% url 'account_reset_password' %}">Забыли пароль?</a>
            </form>
-           <a href="{% url 'account_reset_password' %}">Забыли пароль?</a>
        </div>
     </section>
 </main>
