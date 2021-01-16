@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = ['intense-beyond-64731.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['cryptic-scrubland-20744.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
