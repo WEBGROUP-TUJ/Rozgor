@@ -583,7 +583,7 @@ body {
 
 main {
   position: relative;
-  
+
   background-attachment: fixed;
   padding: 10px 0 0 0;
   display: -webkit-box;
@@ -691,7 +691,7 @@ main {
   width: fit-content;
 }
 
-.menu > li {
+.menu>li {
   background: #007732;
   float: left;
   position: relative;
@@ -718,7 +718,7 @@ main {
   background: #e74c3c;
 }
 
-.menu > li > a {
+.menu>li>a {
   padding: 1em 2em;
 }
 
@@ -745,11 +745,11 @@ main {
   text-align: center;
 }
 
-.submenu > li > a {
+.submenu>li>a {
   padding: 1em 2em;
 }
 
-.submenu > li::after {
+.submenu>li::after {
   content: '';
   position: absolute;
   top: -125%;
@@ -761,13 +761,13 @@ main {
 
 /* Odd stuff */
 
-.submenu > li:nth-child(odd) > a {
+.submenu>li:nth-child(odd)>a {
   -webkit-transform: skewX(25deg);
   -ms-transform: skewX(25deg);
   transform: skewX(25deg);
 }
 
-.submenu > li:nth-child(odd)::after {
+.submenu>li:nth-child(odd)::after {
   right: -50%;
   -webkit-transform: skewX(-25deg) rotate(3deg);
   -ms-transform: skewX(-25deg) rotate(3deg);
@@ -776,19 +776,19 @@ main {
 
 /* Even stuff */
 
-.submenu > li:nth-child(even) {
+.submenu>li:nth-child(even) {
   -webkit-transform: skewX(25deg) translateX(0);
   -ms-transform: skewX(25deg) translateX(0);
   transform: skewX(25deg) translateX(0);
 }
 
-.submenu > li:nth-child(even) > a {
+.submenu>li:nth-child(even)>a {
   -webkit-transform: skewX(-25deg);
   -ms-transform: skewX(-25deg);
   transform: skewX(-25deg);
 }
 
-.submenu > li:nth-child(even)::after {
+.submenu>li:nth-child(even)::after {
   left: -50%;
 }
 
@@ -806,19 +806,19 @@ main {
   transition: 0.2s ease transform;
 }
 
-.menu > li:hover .submenu,
-.menu > li:hover .submenu li {
+.menu>li:hover .submenu,
+.menu>li:hover .submenu li {
   opacity: 1;
   visibility: visible;
 }
 
-.menu > li:hover .submenu li:nth-child(even) {
+.menu>li:hover .submenu li:nth-child(even) {
   -webkit-transform: skewX(25deg) translateX(15px);
   -ms-transform: skewX(25deg) translateX(15px);
   transform: skewX(25deg) translateX(15px);
 }
 
-.menu > li:hover .submenu li:nth-child(odd) {
+.menu>li:hover .submenu li:nth-child(odd) {
   -webkit-transform: skewX(-25deg) translateX(-15px);
   -ms-transform: skewX(-25deg) translateX(-15px);
   transform: skewX(-25deg) translateX(-15px);
@@ -1422,7 +1422,7 @@ footer {
   color: #ffffff;
 }
 
-.left_bottom a > img {
+.left_bottom a>img {
   margin-bottom: 27px;
 }
 
@@ -1495,7 +1495,7 @@ footer {
   margin-right: 14px;
 }
 
-.location > .bottom_item > img {
+.location>.bottom_item>img {
   width: 14px;
   height: 19px;
   -o-object-fit: none;
@@ -1959,6 +1959,10 @@ footer {
   font-weight: 700;
   margin-bottom: 10px;
   color: white;
+}
+
+.reg .container form a {
+  font-size: 18px;
 }
 
 .category_div {
@@ -2563,8 +2567,7 @@ footer {
 .delete h1 {
   text-align: center;
   font-size: 40px;
-  color: #ffffff;
-  text-shadow: 0px 0px 20px #006828;
+  color: rgb(0, 0, 0);
 }
 
 .careate {
@@ -2769,11 +2772,11 @@ footer {
 }
 
 @media (max-width: 1150px) {
-  .menu > li {
+  .menu>li {
     width: 150px;
   }
 
-  .menu > li > a {
+  .menu>li>a {
     padding: 1em 0;
   }
 
@@ -2869,15 +2872,15 @@ footer {
     margin-bottom: 30px;
   }
 
-  .menu > li {
+  .menu>li {
     width: 116.5px;
   }
 
-  .menu > li a {
+  .menu>li a {
     font-size: 10px;
   }
 
-  .menu > li .submenu {
+  .menu>li .submenu {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -2927,16 +2930,16 @@ footer {
 }
 
 @media (max-width: 730px) {
-  .menu > li {
+  .menu>li {
     width: 100px;
     display: none;
   }
 
-  .menu > li a {
+  .menu>li a {
     font-size: 10px;
   }
 
-  .menu > li .submenu {
+  .menu>li .submenu {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -3013,6 +3016,7 @@ footer {
   }
 
   .reg {
+    text-align: center;
     padding: 30px 0;
     width: 100%;
     display: -webkit-box;
