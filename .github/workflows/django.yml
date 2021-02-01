@@ -24,6 +24,3 @@ jobs:
     - name: Install Dependencies
       run: |
         docker-compose up -d --build
-    - name: Run Tests
-      run: |
-        docker-compose exec web python manage.py test
