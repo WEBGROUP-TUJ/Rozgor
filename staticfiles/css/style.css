@@ -586,7 +586,7 @@ main {
   position: relative;
   background: url(../img/4855443.jpg) 50% 50% / cover;
   background-attachment: fixed;
-  padding: 10px 0 0 0;
+  padding: 10px 0 40px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1340,7 +1340,6 @@ main {
 .info {
   width: 100%;
   padding: 60px;
-  margin-top: 40px;
   background: #006d8e;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2770,7 +2769,7 @@ footer {
   }
 
   main {
-    padding: 0 0 0 0;
+    padding: 0 0 40px 0;
   }
 }
 
