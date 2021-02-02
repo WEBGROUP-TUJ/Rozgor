@@ -538,7 +538,7 @@ body {
   height: 100%;
   width: 350px;
   padding: 37px;
-  background-color: rgba(11, 92, 65, 0.7);
+  background-color: rgba(11, 46, 92, 0.7);
   -webkit-transition: -webkit-transform 0.4s ease-in;
   transition: -webkit-transform 0.4s ease-in;
   -o-transition: transform 0.4s ease-in;
@@ -908,7 +908,6 @@ main {
 
 .category h3 {
   text-align: left;
-  margin-left: -20px;
 }
 
 .slide1 {
@@ -2913,11 +2912,6 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-
-  .category h3 {
-    text-align: center;
-    margin-left: -20px;
   }
 }
 
