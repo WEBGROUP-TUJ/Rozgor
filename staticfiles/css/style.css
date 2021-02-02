@@ -966,6 +966,8 @@ main {
 
 .slide1 .item a img {
   padding: 0 10px;
+  width: 80px;
+  height: 80px;
 }
 
 .slide1 .item a h4 {
@@ -1117,7 +1119,7 @@ main {
 
 .new .slide2 .item img {
   width: 165px;
-  height: 155px;
+  height: 165px;
   margin-bottom: 20px;
 }
 
