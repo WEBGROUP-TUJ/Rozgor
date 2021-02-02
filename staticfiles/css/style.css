@@ -10,7 +10,6 @@ h3 {
   font-size: 30px;
   -webkit-animation: switch 5s linear infinite;
   animation: switch 5s linear infinite;
-  padding: 0 20px;
 }
 
 p {
@@ -291,6 +290,11 @@ body {
   font-size: 32px;
   font-weight: 800;
   color: #fff;
+}
+
+.logo img {
+  width: 178px;
+  height: 50px;
 }
 
 /* ------------ Desktop navigation ----------- */
@@ -689,7 +693,7 @@ main {
 }
 
 .menu > li {
-  background: #007732;
+  background: #005e9c;
   float: left;
   position: relative;
   -webkit-transition: 0.3s;
@@ -736,7 +740,7 @@ main {
 }
 
 .submenu li {
-  background-color: #007732;
+  background-color: #0099ff;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -973,11 +977,18 @@ main {
   color: #ffffff;
   background: #005fcc;
   padding: 7px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slide1 .item a h4:hover {
+  background: #00027c;
 }
 
 .slide1 .item:hover {
-  -webkit-box-shadow: inset 0px 0px 2px 2px rgba(255, 0, 0, 0.596);
-  box-shadow: inset 0px 0px 2px 2px rgba(255, 0, 0, 0.596);
+  -webkit-box-shadow: inset 0px 0px 4px 4px rgba(77, 46, 255, 0.596);
+  box-shadow: inset 0px 0px 4px 4px rgba(77, 46, 255, 0.596);
 }
 
 .slide1 .owl-prev {
@@ -1179,7 +1190,7 @@ main {
 
 .new .slide2 .item .item_buttons a:hover {
   cursor: pointer;
-  background: #5f0000;
+  background: #00195f;
   color: white;
 }
 
@@ -1328,7 +1339,7 @@ main {
 .info {
   width: 100%;
   padding: 60px;
-  background: #0C8E00;
+  background: #006d8e;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1659,11 +1670,11 @@ footer {
   width: 415px;
   height: 400px;
   background: #ffffff;
-  border: 1px solid #159500;
+  border: 1px solid #002895;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: -10px -10px 0px 1px #009400;
-  box-shadow: -10px -10px 0px 1px #009400;
+  -webkit-box-shadow: -10px -10px 0px 1px #0a005f;
+  box-shadow: -10px -10px 0px 1px #0a005f;
   padding: 20px;
 }
 
@@ -1698,10 +1709,10 @@ footer {
   font-size: 36px;
   line-height: 42px;
   font-weight: 600;
-  text-shadow: 0 0 3px #00a808;
   font-family: 'Roboto', sans-serif;
   padding-bottom: 3px;
-  border-bottom: 2px #048300 solid;
+  color: blue;
+  border-bottom: 2px #00a055 solid;
   margin-bottom: 20px;
 }
 
@@ -1709,7 +1720,6 @@ footer {
   font-size: 30px;
   line-height: 35px;
   font-weight: 600;
-  text-shadow: 0 0 3px #e4e000;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
 }
@@ -1735,7 +1745,7 @@ footer {
   border-radius: 2px;
   font-weight: bold;
   color: white;
-  background: #00a824;
+  background: #0094a8;
 }
 
 .tovar .container .tovar_right form select option {
@@ -1774,7 +1784,6 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #009D2C;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -1792,8 +1801,8 @@ footer {
 
 .tovar .container .tovar_right form input:hover {
   text-decoration: none;
-  -webkit-box-shadow: 0px 0px 0px 4px #009400;
-  box-shadow: 0px 0px 0px 4px #009400;
+  -webkit-box-shadow: 0px 0px 0px 4px #ffae00;
+  box-shadow: 0px 0px 0px 4px #ffae00;
 }
 
 .tovar .container .tovar_right form input:focus {
@@ -1808,7 +1817,7 @@ footer {
   width: 100%;
   padding: 30px;
   color: white;
-  background: #009400;
+  background: #005194;
   border-radius: 5px;
 }
 
@@ -2618,10 +2627,6 @@ footer {
 }
 
 .poisk2 .poisk_row .item {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  width: 300px;
   height: 325px;
   background: #ffffff;
   padding: 20px 0 0 0;
@@ -2642,10 +2647,11 @@ footer {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  border: 4px #0077ff solid;
+  border-style: outset;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 7px;
 }
 
 .poisk2 .poisk_row .item img {
@@ -2704,7 +2710,6 @@ footer {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 0 0 7px 7px;
 }
 
 .poisk2 .poisk_row .item .item_buttons a img {
@@ -2715,16 +2720,16 @@ footer {
 }
 
 .poisk2 .poisk_row .item .item_buttons a:first-child {
-  background: #006605;
+  background: #006eff;
 }
 
 .poisk2 .poisk_row .item .item_buttons a:last-child {
-  background: #27a700;
+  background: #006eff;
 }
 
 .poisk2 .poisk_row .item .item_buttons a:hover {
   cursor: pointer;
-  background: #005eb6;
+  background: #00195f;
   color: white;
 }
 
@@ -2911,7 +2916,7 @@ footer {
 
   .category h3 {
     text-align: center;
-    margin-left: 0px;
+    margin-left: -20px;
   }
 }
 
