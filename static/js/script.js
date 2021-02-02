@@ -6,6 +6,10 @@ menuToggle.onclick = function () {
     mobileNavContainer.classList.toggle('mobile-nav--active');
 }
 
+$('.btn-outline-danger').on( 'click' ,  function(){
+    alert("Товар Добавлен в корзину!")
+})
+
 
 $(function () {
     $('#nav li:has(ul)').doubleTapToGo();
@@ -95,10 +99,10 @@ $(document).ready(function () {
                 items: 5
             },
             1000: {
-                items: 6
+                items: 5
             },
             1100: {
-                items: 7
+                items: 6
             }
         }
     })  
