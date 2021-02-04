@@ -2,7 +2,7 @@
 
 Данный интернет магазин сделан при помощи Django
 
-<img src="./doc/images/homepage.png" alt="Главная страница">
+<img src="./doc/images/logo.png" alt="Главная страница">
 
 ## О проекте
 
@@ -26,9 +26,6 @@
 
 * **Тимур Касимов**
 
-
-## License
-*Этот проект находится под лицензией MIT [LICENSE](https://github.com/UlugbekMuslitdinov/exizmat/blob/main/LICENSE) и защищен торговой маркой Exizmat. Распространение и использование в коммерческих и/или личных целях без согласия автора ЗАПРЕЩЕНО*
 
 ## Установка:
 ### С помощью Docker:
