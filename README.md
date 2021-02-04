@@ -2,7 +2,7 @@
 
 Данный интернет магазин сделан при помощи Django
 
-<img src="./doc/images/logo.png" alt="Главная страница">
+<img src="./doc/images/logo.jpg" alt="Главная страница">
 
 ## О проекте
 
