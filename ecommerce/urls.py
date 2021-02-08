@@ -27,9 +27,6 @@ urlpatterns = [
     path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('exizmat-admin/', admin.site.urls),
 
-    #User management
-    path('accounts/', include('allauth.urls')),
-
     #Local apps
     
     path('cart', include('cart.urls')),

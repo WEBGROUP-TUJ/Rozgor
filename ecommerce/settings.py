@@ -44,19 +44,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
-    'django.contrib.staticfiles',
-    'django.contrib.sites',
-    
+    'django.contrib.staticfiles',    
     
     #3-rd party
     'grappelli',
     'debug_toolbar',
     'crispy_forms',
-    'allauth',
-    'allauth.account',
 
     #local
-    'accounts.apps.AccountsConfig',
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
@@ -146,15 +141,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' - выводи�
 в консоль.
 '''
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-DEFAULT_FROM_EMAIL = 'ulugbekmuslitdinov@gmail.com'
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = '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'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 
@@ -218,22 +205,3 @@ if ENVIRONMENT == 'production':
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
-
-AUTH_USER_MODEL = 'accounts.CustomUser'
-
-LOGIN_REDIRECT_URL = 'shop:category_list'
-ACCOUNT_LOGOUT_REDIRECT = 'shop:category_list'
-
-#django-allauth config
-SITE_ID = 1
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend', # new
-)
-
-ACCOUNT_SESSION_REMEMBER = True # new
-ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False # new
-ACCOUNT_USERNAME_REQUIRED = False # new
-ACCOUNT_AUTHENTICATION_METHOD = 'email' # new
-ACCOUNT_EMAIL_REQUIRED = True # new
-ACCOUNT_UNIQUE_EMAIL = True # new
