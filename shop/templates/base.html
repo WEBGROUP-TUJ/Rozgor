@@ -39,7 +39,8 @@
             <div class="header-overlay">
                 <div class="nav-container">
 
-                    <a href="{% url 'shop:category_list' %}" class="logo"><img src="{% static 'img/Group 1.png' %}" alt=""></a>
+                    <a href="{% url 'shop:category_list' %}" class="logo"><img src="{% static 'img/logo.png' %}"
+                            alt=""></a>
 
                     <!-- НАВИГАЦИЯ -->
                     <div class="nav-wrapper">
@@ -48,14 +49,17 @@
                         <div class="poisk">
                             <form action="{% url 'shop:search_results' %}" method="GET">
                                 <input name="q" class="write" placeholder="Поиск по товарам" aria-label="Search">
-                                <button class="send" type="submit"><img src="{% static 'img/searching-magnifying-glass.png' %}"
-                                        alt=""></button>
+                                <button class="send" type="submit"><img
+                                        src="{% static 'img/searching-magnifying-glass.png' %}" alt=""></button>
                             </form>
-                            <div class="header_left">                            
+                            <div class="header_left">
 
-                                <a href="{% url 'cart:cart_detail' %}"><div class="korzina" href="#"><img src="{% static './img/basket.png' %}" alt=""></div></a>
+                                <a href="{% url 'cart:cart_detail' %}">
+                                    <div class="korzina" href="#"><img src="{% static './img/basket.png' %}" alt="">
+                                    </div>
+                                </a>
                             </div>
-                            
+
                         </div>
 
                         <!-- Кнопка для мобильной навигации -->
@@ -67,16 +71,17 @@
                         <div id="mobile-nav" class="mobile-nav">
                             <div class="mobile-nav__title">Навигация</div>
                             <div class="mob_poisk">
-                                
+
                                 <div class="mob_header_left">
-                                    <a class="mob_korzina" href="{% url 'cart:cart_detail' %}"><img src="{% static './img/basket.png' %}" alt=""></a>
+                                    <a class="mob_korzina" href="{% url 'cart:cart_detail' %}"><img
+                                            src="{% static './img/basket.png' %}" alt=""></a>
 
                                 </div>
                             </div>
 
                         </div>
 
-                        
+
 
 
                     </div>
@@ -96,81 +101,83 @@
         </div>
     </section>
     {% block content %}
-    
+
     {% endblock content %}
-    
+
     <section class="info">
-        <div class="container">
-            <div class="info-div col-lg-4"><img src="{% static 'img/car.png' %}" alt="">
-                <h5>Безопасная доставка</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin vel mattis dictum magnis.
-                    Ac at
-                    tristique aenean porta imperdiet eget condimentum.</p>
+        <div class="container-fluid">
+            <div class="info-div col-md-3 col-sm-12"><img src="img/headphone_nGU64yZ.png" alt="">
+                <h5>24/7 сервисный центр</h5>
+                <p>
+                    К вашим услугам днем ​​и ночью.</p>
             </div>
-            <div class="info-div col-lg-4"><img src="{% static 'img/crm.png' %}" alt="">
-                <h5>Обслуживание Клиентов</h5>
-                <p>Вы всегда можете рассчитывать на грамотную консультацию наших специалистов и помощь при выборе
-                    товаров.</p>
+            <div class="info-div col-md-3 col-sm-12"><img src="img/hand_ptGDetP.png" alt="">
+                <h5>безопасный способ оплаты</h5>
+                <p>Qulay usulda to'lang.</p>
             </div>
-            <div class="info-div col-lg-4"><img src="{% static 'img/like.png' %}" alt="">
-                <h5>Качество и Надежность</h5>
-                <p>В нашем интернет-магазине представлены только самые качественные товары от ведущих мировых
-                    производителей.</p>
+            <div class="info-div col-md-3 col-sm-12"><img src="img/box_YUWKLne.png" alt="">
+                <h5>Бесплатная доставка по Ташкенту.</h5>
+                <p>
+                    Примите ваш заказ в удобное для вас время.</p>
+            </div>
+            <div class="info-div col-md-3 col-sm-12"><img src="img/Shape_WtoAAPp.png" alt="">
+                <h5>
+                    Покупайте с уверенностью</h5>
+                <p>Наша продукция имеет знак качества.</p>
             </div>
         </div>
     </section>
 
 
-</main>
+    </main>
 
 
-<footer class="">
-    <div class="container">
-        <div class="bottom_top">
-            <div class="wow fadeInLeft left_bottom col-lg-4" data-wow-delay="0.3s">
-                <a class="logo" href="#">
-                    <img src="{% static 'img/Group 1.png' %}" alt="">
-                </a>
-                <p class="bot_p">Поставка компьютерного оборудования для вашей компании: Компьютеры, серверное
-                    оборудование, перефирийные устройства, кабели и многое другое.</p>
-            </div>
-            <div class="wow fadeInLeft center_bottom col-lg-4" data-wow-delay="0.6s">
-                <h4>Наш адрес</h4>
-                <div class="location">
-                    <p class="bot_p">
-                        Ташкент, Узбекистан <br>
-                        Мирзо-Улугбекский район <br>
-                        улица Мирзо Улугбека, 99.
-                    </p>
+    <footer class="">
+        <div class="container">
+            <div class="bottom_top">
+                <div class="wow fadeInLeft left_bottom col-lg-4" data-wow-delay="0.3s">
+                    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+
+                    <p class="bot_p">Поставка компьютерного оборудования для вашей компании: Компьютеры, серверное
+                        оборудование, перефирийные устройства, кабели и многое другое.</p>
                 </div>
-                <div class="numb">
+                <div class="wow fadeInLeft center_bottom col-lg-4" data-wow-delay="0.6s">
+                    <h4>Наш адрес</h4>
+                    <div class="location">
+                        <p class="bot_p">
+                            Ташкент, Узбекистан <br>
+                            Мирзо-Улугбекский район <br>
+                            улица Мирзо Улугбека, 99.
+                        </p>
+                    </div>
+                    <div class="numb">
 
-                    <p class="bot_p">123<br> 123</p>
+                        <p class="bot_p">+998 98 302 32 66 <br> +998 97 740 00 34</p>
+                    </div>
                 </div>
-            </div>
-            <div class="wow fadeInLeft right_bottom col-lg-4" data-wow-delay="0.9s">
-                <h4>Информация</h4>
+                <div class="wow fadeInLeft right_bottom col-lg-4" data-wow-delay="0.9s">
+                    <h4>Информация</h4>
 
-                <ul class="bottom_nav">
-                    <li><a href="info.html">О компании</a></li>
-                    <li><a href="uslugi.html">Услуги</a></li>
-                    <li><a href="partner.html">Партнеры</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
-                </ul>
+                    <ul class="bottom_nav">
+                        <li><a href="info.html"><img src="" alt=""></a></li>
+                        <li><a href="uslugi.html"><img src="" alt=""></a></li>
+                        <li><a href="partner.html"><img src="" alt=""></a></li>
+                        <li><a href="contact.html"><img src="" alt=""></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- ============================================== -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-    crossorigin="anonymous"></script>
+    </footer>
+    <!-- ============================================== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
