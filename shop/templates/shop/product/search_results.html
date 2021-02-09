@@ -3,41 +3,42 @@
 {% block title %}Search{% endblock title %}
 
 {% block content %}
-    <main>
-        <section class="find_text">
-            <h1>Результаты поиска</h1>
-        </section>
-        <section class="poisk2">
-            
-                
-            
-            <div class="container">
-                
-                <div class="poisk_row">
+<main>
+    <section class="find_text">
+        <h1>qidiruv natijalari</h1>
+    </section>
+    <section class="poisk2">
 
-                    {% for product in product_list %}
-                    <div class="item col-lg-3">
-                        <img src="{% if product.image %}{{product.image.url}}{% endif %}" alt="">
-                        <p>{{product.name}}</p>
-                        <h4>{{product.price}} сум</h4>
-                        <div class="item_buttons">
-                            <a href="{{product.get_absolute_url}}">Посмотреть</a>
-                        </div>
-                        <div class="dropdown_div">
-                            <form action="">
-                                <label for="">Количество : </label>
-                                <select name="" id="">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                                <input type="submit" value="В корзину">
-                            </form>
-                        </div>
+
+
+        <div class="container">
+
+            <div class="poisk_row">
+
+                {% for product in product_list %}
+                <div class="item col-lg-3">
+                    <img src="{% if product.image %}{{product.image.url}}{% endif %}" alt="">
+                    <p>{{product.name}}</p>
+                    <h4>{{product.price}} сум</h4>
+                    <div class="item_buttons">
+                        <a href="{{product.get_absolute_url}}">Qarang</a>
                     </div>
-                    {% endfor %}
+                    <div class="dropdown_div">
+                        <form action="">
+                            <label for="">
+                                Miqdor : </label>
+                            <select name="" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <input type="submit" value="Savatchaga qo'shish">
+                        </form>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 
 {% endblock content %}
