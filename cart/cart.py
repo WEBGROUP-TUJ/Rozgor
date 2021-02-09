@@ -4,6 +4,7 @@ from shop.models import Product
 
 
 class Cart(object):
+
     def __init__(self, request):
         self.session = request.session
         cart = self.session.get(settings.CART_SESSION_ID)
@@ -51,3 +52,6 @@ class Cart(object):
     def clear(self):
         del self.session[settings.CART_SESSION_ID]
         self.session.modified = True
+        
+    def sum_of_items(self):
+        return sum(item['quantity'] for item in self.cart.values())

@@ -56,7 +56,7 @@
 
                                 <a href="{% url 'cart:cart_detail' %}">
                                     <div class="korzina" href="#">
-                                        <div class="colich">3</div><img src="{% static './img/basket.png' %}" alt="">
+                                        <div class="colich">{{cart.sum_of_items}}</div><img src="{% static './img/basket.png' %}" alt="">
                                     </div>
                                 </a>
                             </div>
