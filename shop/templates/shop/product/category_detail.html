@@ -19,12 +19,9 @@
                 </div>
                 <div class="dropdown_div">
                     <form action="">
-                        <label for="">Savatchaga qo'shish</label>
-                        <select name="" id="">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
-                        <input type="submit" value=" Savatchaga qo'shish">
+                        {% csrf_token %}
+                        {{ cart_product_form }}
+                        <input type="submit" value="qo'shish">
                     </form>
                 </div>
             </div>
