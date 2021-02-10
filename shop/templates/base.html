@@ -24,7 +24,7 @@
 
     <!-- ============================================== -->
 
-    <link rel="stylesheet" href="{% static 'css/style-min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
     <script defer src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
@@ -95,7 +95,7 @@
     <section class="mob_poisk">
         <div class="container">
             <form action="{% url 'shop:search_results' %}" method="GET">
-                <input class="mob_write" placeholder="Поиск по товарам" type="text">
+                <input class="mob_write" placeholder="Mahsulotlar bo'yicha qidirish" type="text">
                 <button class="mob_send" type="submit"><img src="{% static 'img/searching-magnifying-glass.png' %}"
                         alt=""></button>
             </form>
