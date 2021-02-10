@@ -7,7 +7,8 @@ from shop.models import Product
 class Order (models.Model):
     first_name = models.CharField("Имя", max_length=60)
     last_name = models.CharField("Фамилия", max_length=60)
-    email = models.EmailField("Электронная почта")
+    phone_number = models.CharField("Номер телефона", max_length=13, null=True)
+    email = models.EmailField("Электронная почта", null=True, blank=True)
     address = models.CharField("Адрес", max_length=150)
     postal_code = models.CharField("Почтовый индекс", max_length=30)
     city = models.CharField("Город", max_length=100)
