@@ -80,26 +80,21 @@
                         <p>{{product.name}}</p>
                         <h4>{{ product.price }} сум</h4>
                         <div class="item_buttons">
-                            <a href="{{ product.get_absolute_url }}">Qarang</a>
+                            <a href="{{ product.get_absolute_url }}">Посмотреть</a>
                         </div>
                         <div class="dropdown_div">
                             <form action="{% url "cart:cart_add" product.id %}" method="post">
                                 {% csrf_token %}
                                 {{ cart_product_form }}
-                                <input type="submit" value="Savatchaga qo'shish">
+                                <input type="submit" value="qo'shish">
                             </form>
                         </div>
                     </div>
-
                     {% endfor %}
                 </div>
             </div>
         </section>
         {% endfor %}
-
-        
-
-
     </main>
 {% endblock content %}
 
