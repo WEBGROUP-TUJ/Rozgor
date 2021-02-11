@@ -2340,10 +2340,25 @@ footer {
 }
 
 .category_div .container-fluid .category_item .dropdown_div select {
+  padding: 0 0 1px;
   border: none;
   outline: none;
   background: #006eff;
   color: white;
+  height: 24px;
+  width: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .category_div .container-fluid .category_item .dropdown_div select:focus {

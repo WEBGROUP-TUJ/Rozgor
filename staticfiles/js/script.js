@@ -1,5 +1,9 @@
+
 const menuToggle = document.querySelector('#menu-togle');
 const mobileNavContainer = document.querySelector('#mobile-nav');
+
+
+
 
 menuToggle.onclick = function () {
     menuToggle.classList.toggle('menu-icon-active');
@@ -56,7 +60,7 @@ $(document).ready(function () {
                 items: 1
             },
             600: {
-                items: 1
+                items: 2
             },
             800: {
                 items: 2
@@ -64,8 +68,11 @@ $(document).ready(function () {
             1000: {
                 items: 3
             },
-            1200: {
+            1800: {
                 items: 4
+            },
+            1801: {
+                items: 6
             },
         }
     })
@@ -82,9 +89,11 @@ $(document).ready(function () {
            "",""
         ],
         responsive: {
-
+            0: {
+                items: 2
+            },
             500: {
-                items: 3
+                items: 2
             },
             600: {
                 items: 3
