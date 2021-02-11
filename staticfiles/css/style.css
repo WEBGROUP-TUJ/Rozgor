@@ -1611,9 +1611,16 @@ footer {
   letter-spacing: 0.8px;
 }
 
+.right_bottom ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
 .right_bottom ul li {
   list-style: none;
   margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
 }
 
 .right_bottom ul li a {
@@ -1622,6 +1629,15 @@ footer {
   -o-transition: 0.4s;
   transition: 0.4s;
   text-decoration: none;
+  font-family: 'Balsamiq Sans', cursive;
+  width: 30px;
+  height: 30px;
+}
+
+.right_bottom ul li a img {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .right_bottom ul li a:hover {
