@@ -86,6 +86,11 @@
                             <form action="{% url "cart:cart_add" product.id %}" method="post">
                                 {% csrf_token %}
                                 {{ cart_product_form }}
+                                <select name="quantity" class="form-control" id="id_quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                <input type="hidden" name="update" value="False" id="id_update">
                                 <input type="submit" value="qo'shish">
                             </form>
                         </div>
