@@ -24,14 +24,15 @@
                         <a href="{{product.get_absolute_url}}">Qarang</a>
                     </div>
                     <div class="dropdown_div">
-                        <form action="">
-                            <label for="">
-                                Miqdor : </label>
-                            <select name="" id="">
+                        <form action="{% url "cart:cart_add" product.id %}" method="post">
+                            {% csrf_token %}
+                            {{ cart_product_form }}
+                            <select name="quantity" class="form-control" id="id_quantity">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                             </select>
-                            <input type="submit" value="Savatchaga qo'shish">
+                            <input type="hidden" name="update" value="False" id="id_update">
+                            <input type="submit" value="xaridga qo'shish">
                         </form>
                     </div>
                 </div>

@@ -1328,6 +1328,7 @@ main {
   outline: none;
   background: #006eff;
   color: white;
+  padding: 0 !important;
 }
 
 .new .slide2 .item .dropdown_div select option {
@@ -2365,6 +2366,7 @@ footer {
   outline: none;
   background: #006eff;
   color: white;
+  padding: 0 !important;
 }
 
 .category_div .container-fluid .category_item .dropdown_div select option {
@@ -3101,6 +3103,7 @@ footer {
   outline: none;
   background: #006eff;
   color: white;
+  padding: 0 !important;
 }
 
 .poisk2 .poisk_row .item .dropdown_div select option {
@@ -3681,6 +3684,7 @@ footer {
     outline: none;
     background: #006eff;
     color: white;
+    padding: 0 !important;
   }
 
   .new .slide2 .dropdown_div select option {
