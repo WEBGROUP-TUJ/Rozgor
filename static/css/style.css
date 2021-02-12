@@ -1904,9 +1904,13 @@ footer {
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
   padding-bottom: 3px;
-  color: blue;
-  border-bottom: 2px #00a055 solid;
+  border-bottom: 2px #0042cf solid;
   margin-bottom: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#006eff));
+  background: -o-linear-gradient(top, #000000, #006eff);
+  background: linear-gradient(to bottom, #000000, #006eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tovar .container .tovar_right h2 {
@@ -1915,6 +1919,7 @@ footer {
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
+  color: #b40000;
 }
 
 .tovar .container .tovar_right form {
@@ -2009,8 +2014,11 @@ footer {
   font-weight: 550;
   width: 100%;
   padding: 30px;
-  color: white;
-  background: #005194;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 89, 255, 0.63)), to(#002b4e));
+  background: -o-linear-gradient(top left, rgba(0, 89, 255, 0.63), #002b4e);
+  background: linear-gradient(to bottom right, rgba(0, 89, 255, 0.63), #002b4e);
+  border: 2px #000981 solid;
   border-radius: 5px;
 }
 
@@ -3382,6 +3390,10 @@ footer {
     height: 320px;
   }
 
+  .tovar {
+    padding: 0;
+  }
+
   .tovar .container .tovar_left .tovar_img {
     width: 315px;
     height: 300px;
@@ -3400,13 +3412,13 @@ footer {
 
   .tovar .container .tovar_right h1 {
     text-align: center;
-    font-size: 19px;
+    font-size: 26px;
     margin: auto;
     margin-bottom: 20px;
   }
 
   .tovar .container .tovar_right h2 {
-    text-align: center;
+    text-align: left;
     margin: auto;
     margin-bottom: 20px;
   }
@@ -3423,7 +3435,6 @@ footer {
   .tovar .container .tovar_right p {
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
   }
 
   .reg {
