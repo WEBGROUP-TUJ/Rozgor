@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
 label {
   display: inline-block;
   margin-bottom: 0rem;
@@ -1198,7 +1203,7 @@ main {
 }
 
 .new .slide2 .item .item_buttons {
-  margin-top: 5px;
+  margin-top: 10px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1301,6 +1306,14 @@ main {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.new .slide2 .item .dropdown_div form h5 {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
 }
 
 .new .slide2 .item .dropdown_div .add,
@@ -1906,11 +1919,12 @@ footer {
   padding-bottom: 3px;
   border-bottom: 2px #0042cf solid;
   margin-bottom: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#006eff));
-  background: -o-linear-gradient(top, #000000, #006eff);
-  background: linear-gradient(to bottom, #000000, #006eff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000a97), to(#0099ff));
+  background: -o-linear-gradient(top, #000a97, #0099ff);
+  background: linear-gradient(to bottom, #000a97, #0099ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
 }
 
 .tovar .container .tovar_right h2 {
@@ -1919,17 +1933,36 @@ footer {
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
-  color: #b40000;
+  color: #004f99;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tovar .container .tovar_right .form_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .tovar .container .tovar_right form {
   margin-top: 20px;
+  width: 100%;
 }
 
 .tovar .container .tovar_right form label {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 10px;
 }
 
 .tovar .container .tovar_right form select {
@@ -1943,7 +1976,10 @@ footer {
   border-radius: 2px;
   font-weight: bold;
   color: white;
-  background: #0094a8;
+  background: #004ea8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 10px;
 }
 
 .tovar .container .tovar_right form select option {
@@ -1967,6 +2003,14 @@ footer {
   outline: none;
 }
 
+.tovar .container .tovar_right form h5 {
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  color: #004f99;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+}
+
 .tovar .container .tovar_right form input {
   width: 209px;
   height: 55px;
@@ -1982,8 +2026,8 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   font-size: 20px;
   line-height: 28px;
@@ -2009,16 +2053,19 @@ footer {
 }
 
 .tovar .container .tovar_right p {
+  -webkit-box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 550;
   width: 100%;
   padding: 30px;
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 89, 255, 0.63)), to(#002b4e));
-  background: -o-linear-gradient(top left, rgba(0, 89, 255, 0.63), #002b4e);
-  background: linear-gradient(to bottom right, rgba(0, 89, 255, 0.63), #002b4e);
-  border: 2px #000981 solid;
+  background: -webkit-gradient(linear, left top, right bottom, from(#067BC2), to(#00a6ff));
+  background: -o-linear-gradient(top left, #067BC2, #00a6ff);
+  background: linear-gradient(to bottom right, #067BC2, #00a6ff);
+  border-bottom: 2px #000000 solid;
+  border-top: 2px #000000 solid;
   border-radius: 5px;
 }
 
@@ -2347,6 +2394,14 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.category_div .container-fluid .category_item .dropdown_div form h5 {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
 }
 
 .category_div .container-fluid .category_item .dropdown_div .add,
@@ -2898,9 +2953,18 @@ footer {
 }
 
 .find_text h1 {
-  display: 25px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000a97), to(#0099ff));
+  background: -o-linear-gradient(top, #000a97, #0099ff);
+  background: linear-gradient(to bottom, #000a97, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
 }
 
 .poisk2 {
@@ -3084,6 +3148,14 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.poisk2 .poisk_row .item .dropdown_div form h5 {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
 }
 
 .poisk2 .poisk_row .item .dropdown_div .add,
@@ -3397,8 +3469,8 @@ footer {
   .tovar .container .tovar_left .tovar_img {
     width: 315px;
     height: 300px;
-    -webkit-box-shadow: 0px 0px 3px 2px #009400;
-    box-shadow: 0px 0px 3px 2px #009400;
+    -webkit-box-shadow: 0px 0px 3px 2px #004aaa;
+    box-shadow: 0px 0px 3px 2px #004aaa;
   }
 
   .tovar .container .tovar_left .tovar_img img {
@@ -3415,6 +3487,11 @@ footer {
     font-size: 26px;
     margin: auto;
     margin-bottom: 20px;
+  }
+
+  .tovar .container .tovar_right form {
+    -moz-text-align-last: left;
+    text-align-last: left;
   }
 
   .tovar .container .tovar_right h2 {
@@ -3668,6 +3745,14 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .new .slide2 .dropdown_div form h5 {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
   }
 
   .new .slide2 .dropdown_div .add,

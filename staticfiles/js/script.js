@@ -68,12 +68,12 @@ $(document).ready(function () {
             1000: {
                 items: 3
             },
-            1800: {
-                items: 4
+            1400: {
+                items: 5
             },
             1801: {
                 items: 6
-            },
+            }
         }
     })
     $('.slide1').owlCarousel({
