@@ -46,6 +46,7 @@
                 <form action="{% url "cart:cart_add" product.id %}" method="post">
                     {% csrf_token %}
                     {{ cart_product_form }}
+                    {{product.measurement}}
                     <input type="submit" value="Savatchaga qo'shish" class="btn btn-outline-danger">
                 </form>              
             </div>

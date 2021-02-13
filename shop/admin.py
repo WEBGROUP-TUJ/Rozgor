@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Category, Product, Banner
+from .models import Category, Product, Measurement
 # Register your models here.
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -21,4 +21,6 @@ class ProductAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 
 #myModels = [Category, Product]
+
+admin.site.register(Measurement)
 
