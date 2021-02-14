@@ -33,14 +33,14 @@
                                 {{ item.update_quantity_form.quantity }}
                                 {{ item.update_quantity_form.update }}
                                 {{item.measurement}}
-                                <input type="submit" value="Изменить">
+                                <input type="submit" value="Tahrirlash">
                             </form>
                             <div class="button_del">
-                                <a class="del" href="{% url "cart:cart_remove" product.id %}">Удалить</a>
-                                <a class="see" href="{{ product.get_absolute_url }}">Посмотреть</a>
+                                <a class="del" href="{% url "cart:cart_remove" product.id %}">O'chirish</a>
+                                <a class="see" href="{{ product.get_absolute_url }}">Qarang</a>
                             </div>
-                            <h4>Цена одного товара : <span class="one_price">{{item.price}}</span></h4>
-                            <h4>Цена : <span class="price">{{item.total_price}}</span></h4>
+                            <h4>Bitta buyum narxi : <span class="one_price">{{item.price}}</span></h4>
+                            <h4>Narx : <span class="price">{{item.total_price}}</span></h4>
                         </div>
                     </div>
                     {% endwith %}
@@ -51,12 +51,12 @@
 
                 </div>
                 <div class="total">
-                    <h2>Суммарная стоимость : <span class="total_price">{{ cart.get_total_price }}</span></h2>
+                    <h2>Umumiy qiymati : <span class="total_price">{{ cart.get_total_price }}</span></h2>
                 </div>
 
                 <div class="zakaz">
-                    <a class="continue" href="{% url "shop:category_list" %}">Продолжить покупку</a>
-                    <a class="arrange" href="{% url "orders:order_create" %}">Оформить заказ</a>
+                    <a class="continue" href="{% url "shop:category_list" %}">Xarid qilishni davom eting</a>
+                    <a class="arrange" href="{% url "orders:order_create" %}">Tekshirib ko'rmoq</a>
                 </div>
             </div>
         </section>
