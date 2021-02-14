@@ -30,7 +30,7 @@
 
         <section class="category">
             <div class="container-fluid">
-                <h3>Категории :</h3>
+                <h3>Kategoriyalar:</h3>
                 <div class="owl-carousel slide1 owl-theme owl-loaded">
                     {% for category in category_list %}
                     <div class="item">
@@ -78,9 +78,9 @@
                     <div class="item">
                         <img src="{% if product.image %}{{product.image.url}}{% endif %}" alt="">
                         <p>{{product.name}}</p>
-                        <h4>{{ product.price }} сум</h4>
+                        <h4>{{ product.price }} so'm</h4>
                         <div class="item_buttons">
-                            <a href="{{ product.get_absolute_url }}">Посмотреть</a>
+                            <a href="{{ product.get_absolute_url }}">Batafsil</a>
                         </div>
                         <div class="dropdown_div">
                             <form action="{% url "cart:cart_add" product.id %}" method="post">
