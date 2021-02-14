@@ -44,9 +44,11 @@
                 <h2 class="price">{{product.price}}<span>сум</span></h2>
                 <p>{{ product.description }}</p>
                 <form action="{% url "cart:cart_add" product.id %}" method="post">
-                    {% csrf_token %}
-                    {{ cart_product_form }}
-                    <h5>{{product.measurement}}</h5>
+                    <div class="row form_row">
+                        {% csrf_token %}
+                        {{ cart_product_form }}
+                        <h5>{{product.measurement}}</h5>
+                    </div>
                     <input type="submit" value="Savatchaga qo'shish" class="btn btn-outline-danger">
                 </form>              
             </div>
