@@ -6,7 +6,7 @@
     <main>
         <section class="korzina_div">
             <div class="container">
-                <h4>Текущий список покупок :</h4>
+                <h4>Hozir savatchada :</h4>
                 <div class="kor_div_wrap">
 
 
@@ -29,7 +29,7 @@
                             </form> -->
                             <form action="{% url 'cart:cart_add' product.id %}" method="post">
                                 {% csrf_token %}
-                                <label for="">Количество : </label>
+                                <label for="">Ko'pligi : </label>
                                 {{ item.update_quantity_form.quantity }}
                                 {{ item.update_quantity_form.update }}
                                 {{item.measurement}}
