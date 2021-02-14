@@ -15,11 +15,8 @@
                 <p>{{product.name}}</p>
                 <h4>{{product.price}}so'm</h4>
                 <div class="item_buttons">
-<<<<<<< HEAD
                     <a href="{{ product.get_absolute_url }}">Batafsil</a>
-=======
-                    <a href="{{ product.get_absolute_url }}">Qarang</a>
->>>>>>> 5e56e40b9ed334f9bea7459e5fe928b65b85e1fd
+
                 </div>
                 <div class="dropdown_div">
                     <form action="{% url "cart:cart_add" product.id %}" method="post">
