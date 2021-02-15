@@ -328,7 +328,7 @@ body {
 }
 
 .logo img {
-  width: 178px;
+  width: 257px;
   height: 50px;
 }
 
@@ -1342,6 +1342,7 @@ main {
   background: #006eff;
   color: white;
   padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 .new .slide2 .item .dropdown_div select option {
@@ -2430,6 +2431,7 @@ footer {
   background: #006eff;
   color: white;
   padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 .category_div .container-fluid .category_item .dropdown_div select option {
@@ -3184,6 +3186,7 @@ footer {
   background: #006eff;
   color: white;
   padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 .poisk2 .poisk_row .item .dropdown_div select option {
@@ -3263,7 +3266,7 @@ footer {
   }
 
   main {
-    padding: 0 17px 40px 17px;
+    padding: 0 0 40px 0;
   }
 }
 
@@ -3781,6 +3784,7 @@ footer {
     background: #006eff;
     color: white;
     padding: 0 !important;
+    border-radius: 0 !important;
   }
 
   .new .slide2 .dropdown_div select option {
