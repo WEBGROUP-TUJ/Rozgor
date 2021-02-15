@@ -11,5 +11,5 @@ urlpatterns = [
    
     path('category/<str:slug>/', CategoryDetailView.as_view(), name='category_detail'),
     path('<int:id>/<str:slug>/', product_detail, name='product_detail'),
-     path('search/', SearchResultsListView.as_view(), name='search_results'),
+    path('search/', SearchResultsListView.as_view(), name='search_results'),
 ]
