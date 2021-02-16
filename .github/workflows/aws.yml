@@ -41,8 +41,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-access-key-id: ${{ secrets.AKIAJMQS5LO3IYGNR6JA }}
+        aws-secret-access-key: ${{ secrets.HPsTEevv50CfBheJcVa0jSPJC0DmFEsO3IThx5pt }}
         aws-region: us-east-2
 
     - name: Login to Amazon ECR
@@ -68,7 +68,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: task-definition.json
-        container-name: sample-app
+        container-name: rozgor
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
