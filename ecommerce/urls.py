@@ -25,7 +25,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     #Django admin
     path('grappelli/', include('grappelli.urls')), # grappelli URLS
-    path('exizmat-admin/', admin.site.urls),
+    path('admin-panel-rozgor/', admin.site.urls),
 
     #Local apps
     
