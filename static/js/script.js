@@ -110,8 +110,11 @@ $(document).ready(function () {
             1000: {
                 items: 5
             },
-            1100: {
-                items: 6
+            1600:{
+                items: 7
+            },
+            1800: {
+                items: 9
             }
         }
     })  
