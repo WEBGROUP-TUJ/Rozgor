@@ -2,7 +2,7 @@
     "family": "",
     "taskRoleArn": "",
     "executionRoleArn": "",
-    "networkMode": "none",
+    "networkMode": "awsvpc",
     "containerDefinitions": [
         {
             "name": "",
@@ -69,7 +69,7 @@
                         "hostPath": "",
                         "containerPath": "",
                         "permissions": [
-                            "write"
+                            "mknod"
                         ]
                     }
                 ],
@@ -129,13 +129,13 @@
             },
             "ulimits": [
                 {
-                    "name": "msgqueue",
+                    "name": "locks",
                     "softLimit": 0,
                     "hardLimit": 0
                 }
             ],
             "logConfiguration": {
-                "logDriver": "awslogs",
+                "logDriver": "splunk",
                 "options": {
                     "KeyName": ""
                 },
@@ -195,7 +195,7 @@
             "efsVolumeConfiguration": {
                 "fileSystemId": "",
                 "rootDirectory": "",
-                "transitEncryption": "DISABLED",
+                "transitEncryption": "ENABLED",
                 "transitEncryptionPort": 0,
                 "authorizationConfig": {
                     "accessPointId": "",
@@ -230,7 +230,7 @@
         }
     ],
     "pidMode": "host",
-    "ipcMode": "host",
+    "ipcMode": "task",
     "proxyConfiguration": {
         "type": "APPMESH",
         "containerName": "",
