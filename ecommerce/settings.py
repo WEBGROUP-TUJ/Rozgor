@@ -195,7 +195,6 @@ if ENVIRONMENT=='production':
     CSRF_COOKIE_SECURE = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-
 #heroku
 
 db_from_env = dj_database_url.config(conn_max_age=500)
