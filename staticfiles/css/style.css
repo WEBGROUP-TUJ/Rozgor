@@ -1970,6 +1970,7 @@ footer {
 
 .all_categories .category_wrap .full a .full_text {
   color: #00a2ff;
+  text-align: center;
 }
 
 .all_categories .category_wrap .full a:hover {
