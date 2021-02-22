@@ -50,7 +50,7 @@ def product_detail(request, id, slug):
     }
     return render(request, 'shop/product/detail.html', context)
 
-class CategoryListView(ListView):
+class CategoryListHomeView(ListView):
     model = Category
     context_object_name = 'category_list'
     template_name = 'shop/product/list.html'
