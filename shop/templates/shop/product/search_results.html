@@ -17,7 +17,7 @@
 
                 {% for product in product_list %}
                 <div class="item col-lg-3">
-                    <img src="{% if product.image %}{{product.image.url}}{% endif %}" alt="">
+                    <img src="{% if product.image %}{{product.image}}{% endif %}" alt="">
                     <p>{{product.name}}</p>
                     <h4>{{product.price}} so'm</h4>
                     <div class="item_buttons">

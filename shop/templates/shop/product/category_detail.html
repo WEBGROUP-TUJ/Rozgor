@@ -11,7 +11,7 @@
         <div class="container-fluid">
             {% for product in category.products.all %}
             <div class="category_item">
-                <img src="{{ product.image.url }}" alt="">
+                <img src="{{ product.image }}" alt="">
                 <p>{{product.name}}</p>
                 <h4>{{product.price}}so'm</h4>
                 <div class="item_buttons">

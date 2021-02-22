@@ -15,7 +15,7 @@
                     {% with product=item.product  %}
                     <div class="kor_div col-lg-6">
                         <div class="kor_img">
-                            <img src="{% if product.image %} {{ product.image.url }} {% endif %}" alt="">
+                            <img src="{% if product.image %} {{ product.image }} {% endif %}" alt="">
                         </div>
                         <div class="kor_content">
                             <h2>{{product.name}}</h2>

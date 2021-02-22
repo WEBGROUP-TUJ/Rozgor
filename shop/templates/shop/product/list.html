@@ -4,26 +4,14 @@
 
 {% block content %}
     <main>
-        <section class="dropdown">
-            <div class="container-fluid">
-                <ul class="menu cf">
-                    {% for category in category_list %}
-                    <li>
-                        <a href="{{ category.get_absolute_url }}">{{category.name}}</a>
-                        
-                    </li>
-                    {% endfor %}
-
-                </ul>
-            </div>
-        </section>
+        
 
         <div class="container-fluid">
             <section class="header_slider">
                 <div class="owl-carousel slide3 owl-theme">
                     <div class="item"><img src="{% static 'img/1-887.jpg' %}" alt=""></div>
                     <div class="item"><img src="{% static 'img/298_1200x755.jpg' %}" alt=""></div>
-                    <div class="item"><img src="img/97368-derevo-nebo-voda-priroda-otrazhenie-1920x1080.jpg" alt=""></div>
+                    <div class="item"><img src="{% static 'img/97368-derevo-nebo-voda-priroda-otrazhenie-1920x1080.jpg' %}" alt=""></div>
                 </div>
             </section>
         </div>
@@ -35,7 +23,7 @@
                     {% for category in category_list %}
                     <div class="item">
                         <a class="category_name" href="{{ category.get_absolute_url }}">
-                            <img src="{% if category.cover %}{{category.cover.url}}{% endif %}" alt="">
+                            <img src="{% if category.cover %}{{category.cover}}{% endif %}" alt="">
                             <h4>{{category.name}}</h4>
                         </a>
                     </div>
@@ -76,7 +64,7 @@
                 <div class="owl-carousel slide2 owl-theme">
                     {% for product in category.products.all %}
                     <div class="item">
-                        <img src="{% if product.image %}{{product.image.url}}{% endif %}" alt="">
+                        <img src="{% if product.image %}{{product.image}}{% endif %}" alt="">
                         <p>{{product.name}}</p>
                         <h4>{{ product.price }} so'm</h4>
                         <div class="item_buttons">
