@@ -17,7 +17,7 @@ class Category(models.Model):
     slug = models.SlugField(max_length=150, unique=True, db_index=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    cover = models.CharField(max_length=200, null=True)
+    cover = models.CharField(max_length=500, null=True)
 
     class Meta:
         indexes = [
@@ -61,7 +61,7 @@ class Product(models.Model):
     stock = models.PositiveIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    image = models.CharField(max_length=200, null=True)
+    image = models.CharField(max_length=500, null=True)
 
     class Meta:
         ordering = ('name',)
