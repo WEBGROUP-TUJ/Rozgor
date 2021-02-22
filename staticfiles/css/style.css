@@ -794,7 +794,7 @@ main {
 
 .slide1 .item {
   min-width: 164px;
-  height: 160px;
+  height: 180px;
   background: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -825,10 +825,10 @@ main {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -838,13 +838,11 @@ main {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: relative;
 }
 
 .slide1 .item a img {
-  width: 100px;
-  height: 100px;
-  margin-top: -39px;
+  width: 120px;
+  height: 120px;
 }
 
 .slide1 .item a h4 {
@@ -859,9 +857,6 @@ main {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
 }
 
 .slide1 .item a h4:hover {
