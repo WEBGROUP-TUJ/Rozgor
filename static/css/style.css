@@ -2912,9 +2912,10 @@ footer {
 }
 
 .poisk2 .poisk_row .item {
-  height: 325px;
+  height: 340px;
   background: #ffffff;
   padding: 20px 0 0 0;
+  margin: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
