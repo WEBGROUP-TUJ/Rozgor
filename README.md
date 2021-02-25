@@ -1,7 +1,7 @@
 # Exizmat
 
 ## Данный интернет магазин сделан при помощи Django
-<img src="./doc/images/logo.jpg" alt="Главная страница">
+<img src="./static/img/logo.png" alt="Главная страница">
 
 ## О проекте
 
@@ -33,3 +33,10 @@
 * ```pipenv install django psycopg2-binary```
 * ```pipenv shell```
 * ```python manage.py runserver```
+
+**Крайне рекомендуем использовать именно _Docker_, так как все образы были созданы на нем и есть большая вероятность, что _pipenv_ не будет работать.**
+
+### Проект находится под лицензией [MIT](https://github.com/WEBGROUP-TUJ/Rozgor/blob/main/LICENSE)
+
+### Все полезные ссылки к этому проекту:
+* [Docker image](https://hub.docker.com/repository/docker/ulugbekus/rozgor)
