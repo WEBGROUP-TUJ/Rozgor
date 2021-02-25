@@ -2174,7 +2174,7 @@ footer {
 }
 
 .category_div .container-fluid .category_item {
-  width: 280px !important;
+  width: 215px !important;
   margin: 5px;
   background: #ffffff;
   padding-top: 14px;
@@ -3747,19 +3747,19 @@ footer {
   }
 
   .header_slider {
-    height: 280px;
+    height: 215px;
   }
 
   .header_slider .slide3 {
-    height: 280px;
+    height: 215px;
   }
 
   .header_slider .slide3 .item {
-    height: 280px;
+    height: 215px;
   }
 
   .header_slider .slide3 .item img {
-    height: 280px;
+    height: 215px;
   }
 
   .slide1 .item {
