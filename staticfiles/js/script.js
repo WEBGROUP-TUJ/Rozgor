@@ -1,45 +1,55 @@
-
-const menuToggle = document.querySelector('#menu-togle');
-const mobileNavContainer = document.querySelector('#mobile-nav');
-
-
-
-
-menuToggle.onclick = function () {
-    menuToggle.classList.toggle('menu-icon-active');
-    mobileNavContainer.classList.toggle('mobile-nav--active');
-}
-
-$('.btn-outline-danger').on( 'click' ,  function(){
-    alert("Товар Добавлен в корзину!")
-})
-
-
-$(function () {
-    $('#nav li:has(ul)').doubleTapToGo();
+$('.slide').slick({
+    dots: false,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+  
+    responsive: [
+      {
+        breakpoint: 1801,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
 });
 
-var prev = ''
-
 $(document).ready(function () {
-    $('.slide3').owlCarousel({        
-        autoplay: true,
-        loop: true,
-        margin: 0,
-        nav: false,
-        dots: false,
-        center:false,
-        autoplayHoverPause: true,
-        smartSpeed: 1000,
-        navText:[
-           "",""
-        ],
-        responsive: {
-            0: {
-                items: 1
-            },
-        }
-    })
     $('.slide2').owlCarousel({        
         autoplay: true,
         loop: true,
@@ -50,7 +60,7 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         smartSpeed: 1000,
         navText:[
-           "",""
+            "",""
         ],
         responsive: {
             0: {
@@ -74,6 +84,24 @@ $(document).ready(function () {
             1801: {
                 items: 6
             }
+        }
+    })
+    $('.slide3').owlCarousel({        
+        autoplay: true,
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: false,
+        center:false,
+        autoplayHoverPause: true,
+        smartSpeed: 1000,
+        navText:[
+           "",""
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
         }
     })
     $('.slide1').owlCarousel({
@@ -119,3 +147,14 @@ $(document).ready(function () {
         }
     })  
 });
+
+const menuToggle = document.querySelector('#menu-togle');
+const mobileNavContainer = document.querySelector('#mobile-nav');
+
+menuToggle.onclick = function () {
+    menuToggle.classList.toggle('menu-icon-active');
+    mobileNavContainer.classList.toggle('mobile-nav--active');
+}
+
+
+

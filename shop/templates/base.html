@@ -7,7 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="интернет магазин, rozgor, uzrozgor, техника, продукты" />
-    <meta name="description" content="Интеренет магазин: кодекс, rozgor, uzrozgor, интеренет магазин, продукты, заказы, доставка">
+    <meta name="description"
+        content="Интеренет магазин: кодекс, rozgor, uzrozgor, интеренет магазин, продукты, заказы, доставка">
     <meta name="google-site-verification" content="A_M_z9Tv2AJAKrMr_Zj-FuuP0P7UT7ACcXRxJBjNpmM" />
     <meta name="yandex-verification" content="2d435396672672f7" />
     <link rel="shortcut icon" href="{% static 'img/basket.png' %}" />
@@ -29,9 +30,12 @@
     <!-- ============================================== -->
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
     <script defer src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script defer src="{% static 'slick/slick.min.js' %}"></script>
     <script defer src="{% static 'js/owl.carousel.min.js' %}"></script>
     <script defer src="{% static 'js/script.js' %}"></script>
 
@@ -81,8 +85,9 @@
                             <div class="mob_poisk">
 
                                 <div class="mob_header_left">
-                                    <a class="mob_korzina" href="{% url 'cart:cart_detail' %}"><img
-                                            src="{% static './img/basket.png' %}" alt=""></a>
+                                    <a class="korzina" href="{% url 'cart:cart_detail' %}">
+                                        <div class="colich">3</div><img src="{% static './img/basket.png' %}" alt="">
+                                    </a>
 
                                 </div>
                                 <div class="header_category">

@@ -61,7 +61,7 @@
         <section class="new">
             <div class="container-fluid">
                 <h3>{{category.name}}:</h3>
-                <div class="owl-carousel slide2 owl-theme">
+                <div class="slide">
                     {% for product in category.products.all %}
                     <div class="item">
                         <img src="{% if product.image %}{{product.image}}{% endif %}" alt="">
@@ -77,6 +77,12 @@
                                 <select name="quantity" class="form-control" id="id_quantity">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
                                 </select>
                                 <h5>{{product.measurement}}</h5>
                                 <input type="hidden" name="update" value="False" id="id_update">
