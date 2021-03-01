@@ -65,7 +65,7 @@
                                     <a href="{% url 'shop:categories' %}">Toifalar</a>
                                 </div>
                                 <a href="{% url 'cart:cart_detail' %}">
-                                    <div class="mob_korzina" href="#">
+                                    <div class="korzina" href="#">
                                         <div class="colich">{{cart.sum_of_items}}</div><img
                                             src="{% static './img/basket.png' %}" alt="">
                                     </div>
@@ -86,7 +86,7 @@
 
                                 <div class="mob_header_left">
                                     <a class="mob_korzina" href="{% url 'cart:cart_detail' %}">
-                                        <div class="colich">3</div><img src="{% static './img/basket.png' %}" alt="">
+                                        <div class="colich">{{cart.sum_of_items}}</div><img src="{% static './img/basket.png' %}" alt="">
                                     </a>
 
                                 </div>
