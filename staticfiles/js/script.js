@@ -3,14 +3,14 @@ $('.slide').slick({
     infinite: true,
     speed: 200,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
   
     responsive: [
       {
         breakpoint: 1801,
         settings: {
           slidesToShow: 6,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           infinite: true,
           dots: true
         }
@@ -19,14 +19,14 @@ $('.slide').slick({
         breakpoint: 1600,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1
+          slidesToScroll: 2
         }
       },
       {
         breakpoint: 1000,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
+          slidesToScroll: 2
         }
       },
       {
