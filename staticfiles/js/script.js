@@ -1,53 +1,42 @@
-$('.slide').slick({
-    dots: false,
-    infinite: true,
-    speed: 200,
-    slidesToShow: 6,
-    slidesToScroll: 2,
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
   
-    responsive: [
-      {
-        breakpoint: 1801,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
       },
-      {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 2
-        }
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
       },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      // when window width is >= 640px
+      1801: {
+        slidesPerView: 6,
+        spaceBetween: 0
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-});
+    }
+  });
 
 $(document).ready(function () {
     $('.slide2').owlCarousel({        
