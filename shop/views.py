@@ -20,8 +20,6 @@ class ProductListView(ListView):
 '''
 
 
-
-
 def product_list(request, category_slug=None):
     category = None
     categories = Category.objects.all()
@@ -38,9 +36,6 @@ def product_list(request, category_slug=None):
     return render(request, 'shop/product/list.html', context)
 
 
-
-
-
 def product_detail(request, id, slug):
     product = get_object_or_404(Product, id=id, slug=slug, available=True)
     cart_product_form = CartAddProductForm()
@@ -50,20 +45,24 @@ def product_detail(request, id, slug):
     }
     return render(request, 'shop/product/detail.html', context)
 
+
 class CategoryListHomeView(ListView):
     model = Category
     context_object_name = 'category_list'
     template_name = 'shop/product/list.html'
+
 
 class CategoryListView(ListView):
     model = Category
     context_object_name = 'category_list'
     template_name = 'shop/product/category_list.html'
 
+
 class CategoryDetailView(DetailView):
     model = Category
     context_object_name = 'category'
     template_name = 'shop/product/category_detail.html'
+
 
 class SearchResultsListView(ListView):
     model = Product

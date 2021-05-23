@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['www.uzrozgor.uz', 'uzrozgor.uz', 'rozgor.herokuapp.com', 'loca
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,12 +44,11 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',    
     
-    #3-rd party
-    'grappelli',
+    # 3-rd party
     'debug_toolbar',
     'crispy_forms',
 
-    #local
+    # local
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
@@ -75,12 +75,11 @@ ROOT_URLCONF = 'ecommerce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -106,8 +105,6 @@ DATABASES = {
         'PORT': 5432
     }
 }
-
-
 
 
 # Password validation
@@ -141,12 +138,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' - выводи�
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'ru-ru'
+LANGUAGE_CODE = 'uz-uz'
 
 TIME_ZONE = 'UTC'
 
@@ -161,9 +156,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
-STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_FINDERS = [ # new
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_FINDERS = [  # new
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
@@ -186,7 +181,7 @@ import socket
 hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
 INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 
-if ENVIRONMENT=='production':
+if ENVIRONMENT == 'production':
     SECURE_SSL_REDIRECT = True
     SECURE_HSTS_SECONDS = 2592000
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
@@ -195,9 +190,12 @@ if ENVIRONMENT=='production':
     CSRF_COOKIE_SECURE = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-#heroku
+# heroku
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Grappelli
+GRAPPELLI_ADMIN_TITLE = "UzRogor Admin Paneli"
