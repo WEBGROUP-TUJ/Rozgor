@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper2 = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -41,6 +41,59 @@ const swiper = new Swiper('.swiper-container', {
             spaceBetween: 0
         }
     }
+});
+
+const swiper1 = new Swiper('.swiper1', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        
+        
+        1800: {
+            slidesPerView: 7,
+            spaceBetween: 6
+        },
+        1600: {
+            slidesPerView: 6,
+            spaceBetween: 6
+        },
+        1500: {
+            slidesPerView: 5,
+            spaceBetween: 6
+        },
+        900: {
+            slidesPerView: 4,
+            spaceBetween: 6
+        },
+
+        700:{
+            slidesPerView: 3,
+            spaceBetween: 6
+        },
+        
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 6
+        },
+    }
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
 });
 
 $(document).ready(function () {

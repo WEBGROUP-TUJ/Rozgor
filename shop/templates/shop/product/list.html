@@ -16,21 +16,38 @@
         </section>
     </div>
 
-    <section class="category">
-        <div class="container-fluid">
-            <h3>Kategoriyalar:</h3>
-            <div class="owl-carousel slide1 owl-theme owl-loaded">
-                {% for category in category_list %}
-                <div class="item">
-                    <a class="category_name" href="{{ category.get_absolute_url }}">
-                        <img src="{% if category.cover %}{{category.cover}}{% endif %}" alt="">
-                        <h4>{{category.name}}</h4>
-                    </a>
-                </div>
-                {% endfor %}
 
+    <section class="category">
+
+        <div class="container-fluid">
+
+            <div class="swiper-container swiper1">
+
+                <div class="swiper-wrapper">
+                    {% for category in category_list %}
+                    <div class="swiper-slide">
+                        <a class="category_name" href="{{ category.get_absolute_url }}">
+                            <img src="{% if category.cover %}{{category.cover}}{% endif %}" alt="">
+                            <h4>{{category.name}}</h4>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"><img src="img/left-arrow.png" alt=""></div>
+                <div class="swiper-button-next"><img src="img/right-arrow.png" alt=""></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
+
         </div>
+
+
+
     </section>
 
 
@@ -63,7 +80,7 @@
             <h3>{{category.name}}:</h3>
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper swiper1">
                     <!-- Slides -->
                     {% for product in category.products.all %}
                     <div class="swiper-slide">
@@ -76,7 +93,7 @@
                                     <a href="{{ product.get_absolute_url }}">Batafsil</a>
                                 </div>
                                 <div class="dropdown_div">
-                                    <form action="{% url "cart:cart_add" product.id %}" method="post">
+                                    <form action="{% url " cart:cart_add" product.id %}" method="post">
                                         {% csrf_token %}
                                         {{ cart_product_form }}
                                         <select name="quantity" class="form-control" id="id_quantity">
