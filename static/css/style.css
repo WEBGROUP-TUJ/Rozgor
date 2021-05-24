@@ -813,10 +813,6 @@ main {
   text-align: left;
 }
 
-.category img {
-  width: 20px;
-  height: 20px;
-}
 
 .category .swiper1 {
   padding: 20px 8px;
@@ -837,6 +833,7 @@ main {
   align-items: center;
   position: relative;
   height: 198px;
+  min-width: 185px;
 }
 
 .category .swiper1 .swiper-slide .category_name {
@@ -861,7 +858,7 @@ main {
   background: #ffffff;
   -webkit-box-shadow: 5px 5px 2px #ececec, -5px -5px 2px #ececec;
   box-shadow: 5px 5px 2px #ececec, -5px -5px 2px #ececec;
-  padding: 20px 27px;
+  padding: 20px 27px 10px 27px;
   text-decoration: none;
   -webkit-transition: 0,5s;
   -o-transition: 0,5s;
@@ -874,6 +871,7 @@ main {
 }
 
 .category .swiper1 .swiper-slide .category_name h4 {
+  margin-top: 10px;
   font-family: 'Roboto', sans-serif;
   width: 100%;
   text-align: center;
