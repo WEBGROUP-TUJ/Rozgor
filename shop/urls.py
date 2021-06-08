@@ -2,7 +2,8 @@ from shop.models import Category
 from django.contrib import admin
 from django.urls import path
 
-from .views import CategoryListView, product_detail, product_list, CategoryDetailView, SearchResultsListView, CategoryListHomeView
+from .views import (CategoryListView, product_detail, product_list,
+                    CategoryDetailView, SearchResultsListView, CategoryListHomeView)
 
 app_name = 'shop'
 

@@ -2,93 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fc211c0-abde-4c1a-9315-e6db40ea3791" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/debug_toolbar/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/debug_toolbar/css/print.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/debug_toolbar/css/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/debug_toolbar/css/toolbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/redirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/redirect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/debug_toolbar/js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/LICENSE-JQUERY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/LICENSE-JQUERY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery-migrate-3.0.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery-migrate-3.0.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery-migrate-3.0.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery-migrate-3.0.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/AUTHORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/AUTHORS.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/external/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.structure.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.structure.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/jquery/ui/jquery-ui.theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/grappelli.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/grappelli.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_fk.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_fk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_generic.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_generic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_m2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_autocomplete_m2m.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_collapsible.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_collapsible.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_collapsible_group.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_collapsible_group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_inline.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_inline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_fk.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_fk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_generic.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_generic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_m2m.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_related_m2m.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_timepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/js/jquery.grp_timepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/mueller/grid/output-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/mueller/grid/output-rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/mueller/grid/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/mueller/grid/output.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/partials/custom/tinymce.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/partials/custom/tinymce.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/stylesheets/screen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/changelog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/accessibility.html" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/examples/accessibility.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autolink/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autolink/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autoresize/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/autoresize/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/langs/en_dlg.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/emotions/langs/en_dlg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example_dependency/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/example_dependency/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli/langs/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/grappelli_contextmenu/langs/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/legacyoutput/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/legacyoutput/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/lists/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/lists/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/langs/en_dlg.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media/langs/en_dlg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/langs/en_dlg.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/media_orig/langs/en_dlg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/preview/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/preview/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/langs/en_dlg.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/langs/en_dlg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/props.htm" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/props.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/style/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/tabfocus/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/tabfocus/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/js/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/plugins/table/js/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/color_picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/js/color_picker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/langs/en_dlg.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/langs/en_dlg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_base.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_cs.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_cs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_de.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_de.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_en.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_en.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_pl.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_documentstructure_pl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/content_typography.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/customized.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/customized.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/themes/advanced/skins/grappelli/ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/tiny_mce_popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce/jscripts/tiny_mce/tiny_mce_popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/grappelli/tinymce_setup/tinymce_setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/grappelli/tinymce_setup/tinymce_setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +50,9 @@
       <updated>1621439688740</updated>
       <workItem from="1621439697413" duration="2868000" />
       <workItem from="1621446156037" duration="1028000" />
-      <workItem from="1621793434542" duration="1408000" />
+      <workItem from="1621793434542" duration="2230000" />
+      <workItem from="1622009616669" duration="259000" />
+      <workItem from="1622034186030" duration="4000" />
     </task>
     <servers />
   </component>
