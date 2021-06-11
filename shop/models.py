@@ -26,8 +26,8 @@ class Category(models.Model):
             models.Index(fields=['slug'], name='slug_index'),
         ]
         ordering = ('name',)
-        verbose_name = 'категория'
-        verbose_name_plural = 'категории'
+        verbose_name = 'Categoriya'
+        verbose_name_plural = 'Categoriyalar'
 
     def __str__(self):
         return self.name
@@ -43,8 +43,8 @@ class Measurement(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Единица измерения'
-        verbose_name_plural = 'Единицы измерения'
+        verbose_name = 'Birlik'
+        verbose_name_plural = 'Birlik'
 
 
 class Product(models.Model):
@@ -66,8 +66,8 @@ class Product(models.Model):
     class Meta:
         ordering = ('name',)
         index_together = (('id', 'slug'),)
-        verbose_name = 'Продукт'
-        verbose_name_plural = 'Продукты'
+        verbose_name = 'Mahsulot'
+        verbose_name_plural = 'Mahsulotlar'
         indexes = [
             models.Index(fields=['id'], name='id_index'),
         ]
