@@ -1,3 +1,11 @@
 *db.sqlite3
 *media
-.idea
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/dataSources.local.xml
+.idea/misc.xml
+.idea/dataSources
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+task-definition.json
+rozgor.pem
